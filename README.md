@@ -38,6 +38,6 @@ assets/
 
 ## Author
 
-Said Boushaba
+Said Boushaba Rahmouni
 
 GitHub: https://github.com/SaidBoushabaRahmouni
