@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORJA GYM — Moldea tu poder</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" async></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">FORJA<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#precios">Planes</a></li>
+    <li><a href="#testimonios">Testimonios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Prueba gratis</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-stripe"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag fade-up">El gimnasio que cambia vidas</div>
+    <h1 class="hero-title fade-up delay-1">
+      MOLDEA<br>TU <em>PODER</em><br>INTERIOR
+    </h1>
+    <p class="hero-sub fade-up delay-2">
+      Entrenamiento de alta intensidad, nutrición personalizada y una comunidad que te impulsa cada día. 
+      Tu transformación empieza hoy.
+    </p>
+    <div class="hero-btns fade-up delay-3">
+      <a href="#precios" class="btn-primary">Ver planes</a>
+      <a href="#contacto" class="btn-outline">Prueba 7 días gratis</a>
+    </div>
+  </div>
+
+  <div class="hero-visual fade-up delay-4">
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-num">12<span>K</span></div>
+        <div class="stat-label">Miembros activos</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">98<span>%</span></div>
+        <div class="stat-label">Satisfacción</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">15<span>+</span></div>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">40<span>+</span></div>
+        <div class="stat-label">Clases semanales</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section id="precios">
+  <div class="section-tag">Elige tu plan</div>
+  <h2 class="section-title">PLANES <em>SIN</em> EXCUSAS</h2>
+  <p class="section-sub">Sin contratos largos. Sin letra pequeña. Cancela cuando quieras.</p>
+
+  <div class="pricing-grid">
+    <!-- BÁSICO -->
+    <div class="plan">
+      <div class="plan-name">Básico</div>
+      <div class="plan-price"><sup>€</sup>24<sub>/mes</sub></div>
+      <p class="plan-desc">Perfecto para empezar. Acceso a las instalaciones en horario estándar.</p>
+      <ul class="plan-features">
+        <li>Acceso lun–vier (6h–22h)</li>
+        <li>Zona de musculación</li>
+        <li>Vestuarios y duchas</li>
+        <li>App de seguimiento</li>
+        <li class="off">Clases grupales</li>
+        <li class="off">Entrenador personal</li>
+        <li class="off">Nutrición personalizada</li>
+      </ul>
+      <button class="btn-outline" onclick="elegirPlan('Básico')">Elegir básico</button>
+    </div>
+
+    <!-- PRO -->
+    <div class="plan featured">
+      <div class="plan-name">Pro</div>
+      <div class="plan-price"><sup>€</sup>49<sub>/mes</sub></div>
+      <p class="plan-desc">La opción favorita. Acceso ilimitado y clases incluidas.</p>
+      <ul class="plan-features">
+        <li>Acceso 24 horas, 7 días</li>
+        <li>Zona de musculación</li>
+        <li>Vestuarios y duchas</li>
+        <li>App de seguimiento</li>
+        <li>Clases grupales ilimitadas</li>
+        <li>1 sesión/mes entrenador</li>
+        <li class="off">Nutrición personalizada</li>
+      </ul>
+      <button class="btn-primary" onclick="elegirPlan('Pro')">Elegir Pro</button>
+    </div>
+
+    <!-- ÉLITE -->
+    <div class="plan">
+      <div class="plan-name">Élite</div>
+      <div class="plan-price"><sup>€</sup>89<sub>/mes</sub></div>
+      <p class="plan-desc">Experiencia completa. Todo incluido para resultados máximos.</p>
+      <ul class="plan-features">
+        <li>Acceso 24 horas, 7 días</li>
+        <li>Zona de musculación</li>
+        <li>Vestuarios y duchas</li>
+        <li>App de seguimiento</li>
+        <li>Clases grupales ilimitadas</li>
+        <li>4 sesiones/mes entrenador</li>
+        <li>Plan nutricional completo</li>
+      </ul>
+      <button class="btn-outline" onclick="elegirPlan('Élite')">Elegir Élite</button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="section-tag">Lo que dicen nuestros miembros</div>
+  <h2 class="section-title">RESULTADOS <em>REALES</em></h2>
+  <p class="section-sub">Personas como tú que decidieron empezar. Estas son sus historias.</p>
+
+  <div class="testimonios-grid">
+    <div class="testimonio">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+      <p>Llevaba años sin pisar un gimnasio. En Forja encontré el ambiente y los entrenadores que necesitaba. Bajé 18 kg en 5 meses y me siento increíble. La comunidad es lo que más me enganchó.</p>
+      <div class="testimonio-author">
+        <div class="avatar">MR</div>
+        <div>
+          <div class="author-name">María Rodríguez</div>
+          <div class="author-meta">Miembro desde 2022 · Plan Élite</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+      <p>El servicio 24 horas fue un game changer para mí. Trabajo hasta tarde y siempre puedo entrenar sin prisas. Los entrenadores son muy profesionales y las instalaciones están impecables.</p>
+      <div class="testimonio-author">
+        <div class="avatar">CL</div>
+        <div>
+          <div class="author-name">Carlos López</div>
+          <div class="author-meta">Miembro desde 2021 · Plan Pro</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonio">
+      <div class="quote-mark">"</div>
+      <div class="stars">★★★★★</div>
+      <p>El plan nutricional del Élite es una pasada. Nunca pensé que comer bien pudiera ser tan fácil. Combinado con las clases de fuerza, transformé completamente mi cuerpo en 8 meses.</p>
+      <div class="testimonio-author">
+        <div class="avatar">AS</div>
+        <div>
+          <div class="author-name">Ana Sánchez</div>
+          <div class="author-meta">Miembro desde 2023 · Plan Élite</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-tag">Empieza hoy</div>
+  <h2 class="section-title">TU PRIMERA <em>SEMANA</em> GRATIS</h2>
+  <p class="section-sub">Rellena el formulario y te contactamos en menos de 24 horas para organizar tu visita.</p>
+
+  <div class="contacto-inner">
+    <div class="contacto-info">
+      <h3>¿Tienes dudas?</h3>
+      <p>Nuestro equipo está listo para ayudarte a elegir el plan perfecto y resolver cualquier pregunta antes de que des el primer paso.</p>
+
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>Calle del Hierro 14, Madrid<br>28001 España</div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>+34 910 123 456<br>Lun–Vie 8h–21h</div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>hola@forjagym.es</div>
+      </div>
+    </div>
+
+    <form id="contactForm" onsubmit="enviarFormulario(event)">
+      <div class="form-row">
+        <input type="text" placeholder="Nombre" id="nombre" required>
+        <input type="text" placeholder="Apellidos" id="apellidos" required>
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="Email" id="email" required>
+        <input type="tel" placeholder="Teléfono" id="telefono">
+      </div>
+      <select id="plan">
+        <option value="" disabled selected>¿Qué plan te interesa?</option>
+        <option>Básico — 24€/mes</option>
+        <option>Pro — 49€/mes</option>
+        <option>Élite — 89€/mes</option>
+        <option>No sé, necesito orientación</option>
+      </select>
+      <textarea placeholder="¿Cuál es tu objetivo? (opcional)" id="mensaje"></textarea>
+      <button type="submit" class="btn-primary form-submit">Quiero mi semana gratis →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">FORJA<span>.</span></div>
+  <div>© 2024 Forja Gym. Todos los derechos reservados.</div>
+  <div style="display:flex;gap:1.5rem;">
+    <a href="#" style="color:#555;text-decoration:none;font-size:0.8rem;">Privacidad</a>
+    <a href="#" style="color:#555;text-decoration:none;font-size:0.8rem;">Aviso legal</a>
+    <a href="#" style="color:#555;text-decoration:none;font-size:0.8rem;">Cookies</a>
+  </div>
+</footer>
+
+<div id="toast">✓ ¡Mensaje enviado! Te contactamos pronto.</div>
+
+
+</body>
+</html>
