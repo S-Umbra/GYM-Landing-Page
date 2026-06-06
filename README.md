@@ -35,8 +35,9 @@ assets/
 
 
 ![GYM Landing Page](assets/image/image.png)
+
 ## Author
 
 Said Boushaba
 
-GitHub: https://github.com/S-Umbra
+GitHub: https://github.com/SaidBoushabaRahmouni
